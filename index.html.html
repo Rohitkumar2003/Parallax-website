@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallax Effect App</title>
+
+    <!-- <script src="js.js"></script> -->
+    
+  </head>
+  <body>
+
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        
+    }
+    body{
+        background: #f9f9f9;
+        min-height: 100vh;
+        overflow-x: hidden;
+    
+    }
+    
+    
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 30px 100px;
+        display: flex;
+        justify-content: flex-;
+        align-items: center;
+        z-index: 100;
+    }
+    
+    .logo {
+        font-size: 2em;
+        color: #359381;
+        pointer-events: none;
+        margin-right: 270px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .navigation a{
+         text-decoration: none;
+         color: #359381;
+         padding: 6px 15px;
+         border-radius: 20px;
+         margin: 0 10px;
+         font-weight: 600;
+         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .navigation a:hover, .navigation a.active{
+        background-color: #359381;
+        color: #fff;
+    }
+    .parallax {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    #text {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        position: absolute;
+        font-size: 5em;
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+    
+    }
+    .parallax img {
+        position: absolute;
+        width: 100%;
+        pointer-events: none;
+    }
+     .sec {
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        position: relative;
+        background:  #003329;
+        padding: 100px;
+    }
+    .sec h2 {
+        text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+    
+         font-size: 3em;
+         color: #fff;
+         margin-bottom: 10px;
+    
+    }
+    .sec p {
+         font-size: 1em;
+         color: #fff;
+         font-weight: 300;
+         
+    } 
+    
+    </style>
+
+    <header>
+      <h2 class="logo">Logo</h2>
+      <nav class="navigation">
+        <a href="#" class="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <section class="parallax">
+      <!-- Hill image -->
+      <img src="/hill1.png" id="hill1" />
+      <img src="/hill2.png" id="hill2" />
+      <img src="/hill3.png" id="hill3" />
+      <img src="/hill4.png" id="hill4" />
+      <img src="/hill1.png" id="hill1" />
+      <img src="/hill5.png" id="hill5" />
+      <!-- Other Res -->
+      <img src="/tree.png" id="tree" />
+      <img src="/leaf.png" id="leaf" />
+      <h2 id="text">Parallex Website</h2>
+      <img src="/plant.png" id="plant" />
+    </section>
+ 
+    <section class="sec">
+      <h2>Parallax Scrolling Website</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse enim
+        dolor dolorem. Rem dicta veniam, eum minus omnis quas dolore sunt quam
+        autem, aut maxime, nihil aliquam distinctio praesentium esse aspernatur
+        nemo nesciunt similique aliquid optio? Adipisci exercitationem
+        temporibus suscipit commodi veniam animi, porro sint mollitia molestias
+        itaque tempora iure, repudiandae impedit accusantium esse tempore
+        explicabo. Suscipit odit esse deleniti nulla aspernatur consectetur,
+        nisi velit explicabo praesentium pariatur quidem et minus quo debitis
+        eius. Repellendus impedit amet consequatur vero sed ipsa? Nihil pariatur
+        odio quisquam earum, adipisci culpa illum cumque tempore eum harum?
+        Voluptatem, quisquam aperiam ullam debitis dolorum explicabo esse
+        molestiae qui quas nihil velit et veniam sapiente aspernatur dolor
+        libero officia unde a id aliquam sed veritatis repellat maiores
+        accusamus! Ullam commodi esse quibusdam neque harum, possimus corrupti!
+        <br> <br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse enim
+        dolor dolorem. Rem dicta veniam, eum minus omnis quas dolore sunt quam
+        autem, aut maxime, nihil aliquam distinctio praesentium esse aspernatur
+        nemo nesciunt similique aliquid optio? Adipisci exercitationem
+        temporibus suscipit commodi veniam animi, porro sint mollitia molestias
+        itaque tempora iure, repudiandae impedit accusantium esse tempore
+        explicabo. Suscipit odit esse deleniti nulla aspernatur consectetur,
+        nisi velit explicabo praesentium pariatur quidem et minus quo debitis
+        eius. Repellendus impedit amet consequatur vero sed ipsa? Nihil pariatur
+        odio quisquam earum, adipisci culpa illum cumque tempore eum harum?
+        Voluptatem, quisquam aperiam ullam debitis dolorum explicabo esse
+        molestiae qui quas nihil velit et veniam sapiente aspernatur dolor
+        libero officia unde a id aliquam sed veritatis repellat maiores
+        accusamus! Ullam commodi esse quibusdam neque harum, possimus corrupti!
+        <br> <br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse enim
+        dolor dolorem. Rem dicta veniam, eum minus omnis quas dolore sunt quam
+        autem, aut maxime, nihil aliquam distinctio praesentium esse aspernatur
+        nemo nesciunt similique aliquid optio? Adipisci exercitationem
+        temporibus suscipit commodi veniam animi, porro sint mollitia molestias
+        itaque tempora iure, repudiandae impedit accusantium esse tempore
+        explicabo. Suscipit odit esse deleniti nulla aspernatur consectetur,
+        nisi velit explicabo praesentium pariatur quidem et minus quo debitis
+        eius. Repellendus impedit amet consequatur vero sed ipsa? Nihil pariatur
+        odio quisquam earum, adipisci culpa illum cumque tempore eum harum?
+        Voluptatem, quisquam aperiam ullam debitis dolorum explicabo esse
+        molestiae qui quas nihil velit et veniam sapiente aspernatur dolor
+        libero officia unde a id aliquam sed veritatis repellat maiores
+        accusamus! Ullam commodi esse quibusdam neque harum, possimus corrupti!
+        <br> <br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse enim
+        dolor dolorem. Rem dicta veniam, eum minus omnis quas dolore sunt quam
+        autem, aut maxime, nihil aliquam distinctio praesentium esse aspernatur
+        nemo nesciunt similique aliquid optio? Adipisci exercitationem
+        temporibus suscipit commodi veniam animi, porro sint mollitia molestias
+        itaque tempora iure, repudiandae impedit accusantium esse tempore
+        explicabo. Suscipit odit esse deleniti nulla aspernatur consectetur,
+        nisi velit explicabo praesentium pariatur quidem et minus quo debitis
+        eius. Repellendus impedit amet consequatur vero sed ipsa? Nihil pariatur
+        odio quisquam earum, adipisci culpa illum cumque tempore eum harum?
+        Voluptatem, quisquam aperiam ullam debitis dolorum explicabo esse
+        molestiae qui quas nihil velit et veniam sapiente aspernatur dolor
+        libero officia unde a id aliquam sed veritatis repellat maiores
+        accusamus! Ullam commodi esse quibusdam neque harum, possimus corrupti!
+        <br> <br>
+      </p>
+    </section>
+
+    <script>
+      let text = document.getElementById("text");
+      let leaf = document.getElementById("leaf");
+      let hill1 = document.getElementById("hill1");
+      let hill4 = document.getElementById("hill4");
+      let hill5 = document.getElementById("hill5");
+      
+
+      window.addEventListener('scroll', () => {
+        let value = window.scrollY;
+
+        text.style.marginTop = value * 2.5 + "px";
+        leaf.style.top = value * -1.5 + "px";
+        hill5.style.left = value * 1.5 + "px";
+        leaf.style.left = value *1.5 + "px";
+        hill1.style.top = value * -1 + "px";
+        hill4.style.left = value * -1.5 + "px";
+            
+    });
+    </script>
+   
+    
+  </body>
+</html>
